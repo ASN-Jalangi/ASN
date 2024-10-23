@@ -6,66 +6,84 @@
     <title>Adarsha Shishu Niketan</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container header-container">
-            <img src="ASN.png" alt="School Logo" class="logo">
-            <div class="school-name">
-                <h1>Adarsha Shishu Niketan</h1>
-                <p>Sadikhan's Dearh, Jalangi</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-left">
+                <img src="ASN.png" alt="School Logo" class="nav-logo">
+                <div class="nav-name">
+                    <h1>Adarsha Shishu Niketan</h1>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <a href="admin.html"><i class="fas fa-user-shield"></i> Admin Login</a>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Cover Photo Section -->
-    <section class="cover-photo">
+    <section class="cover-photo" id="home">
         <img src="ASN-Cover.jpg" alt="School Cover Photo">
         <div class="cover-text">
-            <h1>Welcome to Adarsha Shishu Niketan</h1>
-            <p>Education is both Enjoyable & Effective</p>
-        </div>
-    </section>
-    
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Founded on 2nd May, 1993, Adarsha Shishu Niketan aims to provide an enjoyable and effective education. Authorized by the West Bengal Government, the school adheres to the State Board syllabus and emphasizes a holistic learning approach for all its students.</p>
+            <h1 style="color: navy;">Welcome to Adarsha Shishu Niketan</h1>
+            <p style="color: navy;">Education is both Enjoyable & Effective</p>
         </div>
     </section>
 
-    <!-- Classes Section -->
-    <section class="classes">
+    <!-- About & Notifications Section -->
+    <section class="main-content">
         <div class="container">
-            <h2>Classes Offered</h2>
-            <ul>
-                <li>Pre-Nursery</li>
-                <li>Nursery</li>
-                <li>One</li>
-                <li>Two</li>
-                <li>Three</li>
-                <li>Four</li>
-                <li>Five</li>
-                <li>Seven</li>
-                <li>Eight</li>
-            </ul>
+            <!-- About Section -->
+            <section class="about" id="about">
+                <h2>About Us</h2>
+                <p>Founded on 2nd May, 1993, Adarsha Shishu Niketan aims to provide an enjoyable and effective education. Authorized by the West Bengal Government, the school adheres to the State Board syllabus and emphasizes a holistic learning approach for all its students.</p>
+                <h3>Classes Offered</h3>
+                <ul>
+                    <li>Pre-Nursery</li>
+                    <li>Nursery</li>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                    <li>Five</li>
+                    <li>Seven</li>
+                    <li>Eight</li>
+                </ul>
+            </section>
+
+            <!-- Notifications Section -->
+            <section class="notifications" id="notifications">
+                <h2>Notifications</h2>
+                <ul id="notification-list">
+                    <!-- Notices will be dynamically added here via JavaScript -->
+                </ul>
+            </section>
         </div>
     </section>
 
-    <!-- Notifications Section -->
-    <section class="notifications">
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
         <div class="container">
-            <h2>Notifications</h2>
-            <ul id="notification-list">
-                <!-- Notices will be dynamically added here via JavaScript -->
-            </ul>
+            <h2>School Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/gallery1.jpg" alt="School Event 1">
+                <img src="images/gallery2.jpg" alt="School Event 2">
+                <img src="images/gallery3.jpg" alt="School Event 3">
+                <img src="images/gallery4.jpg" alt="School Event 4">
+                <!-- More images can be added dynamically -->
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2>Contact Information</h2>
             <p>Address: Sadikhan's Dearh, Jalangi, Murshidabad, West Bengal, 742303</p>
@@ -74,19 +92,23 @@
         </div>
     </section>
 
-    <!-- Admin Login Section -->
-    <section class="admin-login">
+    <!-- Footer Section with Social Media Links -->
+    <footer class="footer">
         <div class="container">
-            <h2>Admin Login</h2>
-            <form id="admin-login-form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" required>
-                <button type="submit" class="btn">Login</button>
-            </form>
+            <h2>Follow Us</h2>
+            <div class="social-links">
+                <a href="https://facebook.com/AdarshaShishuNiketan.Jalangi" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://youtube.com/@AdarshaShishuNiketan" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/adarshashishuniketan.jalangi" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
         </div>
-    </section>
+    </footer>
 
     <script src="script.js"></script>
 </body>
