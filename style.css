@@ -1,134 +1,61 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-/* Header Section */
 
 .header {
-    background: #004080;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-.header p {
-    font-size: 1.2em;
-}
-
-/* Navigation */
-.nav {
-    background: #333;
-    overflow: hidden;
-    padding: 10px;
-    text-align: center;
-}
-
-.nav li {
-    display: inline;
-    list-style: none;
-    margin: 0 15px;
-}
-
-.nav li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-.nav li a:hover {
-    color: #ccc;
-}
-
-/* Section Styles */
-.section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.section p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form label {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    border: none;
-    background: #004080;
-    color: white;
-    font-size: 1.1em;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background: #003366;
-}
-
-/* Footer */
-.footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Header Section */
-.header {
-    background: #004080;
-    color: white;
-    padding: 20px 0;
+    background-color: #004d99;
+    color: #fff;
+    padding: 15px;
 }
 
 .header-container {
     display: flex;
-    align-items: center; /* Vertically align the logo with the text */
+    align-items: center;
 }
 
 .logo {
-    width: 30px; /* Adjust the width to fit your logo size */
+    width: 50px;
+    margin-right: 15px;
+}
+
+.cover-photo img {
+    width: 100%;
     height: auto;
-    margin-right: 15px; /* Space between logo and text */
 }
 
-.school-name h1 {
-    margin: 0;
-    font-size: 2.5em;
+.about, .classes, .notifications, .contact, .admin-login {
+    padding: 20px;
 }
 
-.school-name p {
-    font-size: 1.2em;
+h2 {
+    color: #004d99;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.notifications li {
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.notifications li.new {
+    background-color: #ffffcc;
+}
+
+.admin-login form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input, button {
+    margin-top: 10px;
+    padding: 10px;
 }
