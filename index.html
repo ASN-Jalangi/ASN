@@ -3,83 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adarsha Shishu Niketan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Cover Photo Section -->
+    <section class="cover-photo">
+        <img src="images/school-cover.jpg" alt="School Cover Photo">
+    </section>
+
     <!-- Header Section -->
     <header class="header">
         <div class="container header-container">
-            <img src="ASN.png" alt="School Logo">
+            <img src="images/ASN.png" alt="School Logo" class="logo">
             <div class="school-name">
                 <h1>Adarsha Shishu Niketan</h1>
-                <p>Sadikhan's Dearh ~ Jalangi ~ Murshidabad</p>
+                <p>Sadikhan's Dearh, Jalangi</p>
             </div>
         </div>
     </header>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <ul class="nav">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#academics">Academics</a></li>
-            <li><a href="#admissions">Admissions</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
-
-    <!-- About Us Section -->
-    <section id="about" class="section">
+    <!-- About Section -->
+    <section class="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Welcome to Adarsha Shishu Niketan, where we strive to provide quality education that fosters innovation and leadership. Our vision is to create a learning environment that encourages students to reach their full potential.</p>
+            <p>Founded on 2nd May, 1993, Adarsha Shishu Niketan aims to provide an enjoyable and effective education. Authorized by the West Bengal Government, the school adheres to the State Board syllabus and emphasizes a holistic learning approach for all its students.</p>
         </div>
     </section>
 
-    <!-- Academics Section -->
-    <section id="academics" class="section">
+    <!-- Classes Section -->
+    <section class="classes">
         <div class="container">
-            <h2>Academics</h2>
-            <p>Our school offers a wide range of academic programs designed to challenge and inspire students. From science to the arts, we nurture creativity, critical thinking, and collaboration.</p>
+            <h2>Classes Offered</h2>
+            <ul>
+                <li>Pre-Nursery</li>
+                <li>Nursery</li>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+                <li>Five</li>
+                <li>Seven</li>
+                <li>Eight</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Admissions Section -->
-    <section id="admissions" class="section">
+    <!-- Notifications Section -->
+    <section class="notifications">
         <div class="container">
-            <h2>Admissions</h2>
-            <p>Join our learning community by applying for admission. We welcome students from all backgrounds and are committed to providing an inclusive education for everyone.</p>
+            <h2>Notifications</h2>
+            <ul id="notification-list">
+                <!-- Notices will be dynamically added here via JavaScript -->
+            </ul>
         </div>
     </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact" class="section">
+    <!-- Contact Section -->
+    <section class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <h2>Contact Information</h2>
+            <p>Address: Sadikhan's Dearh, Jalangi, Murshidabad, West Bengal, 742303</p>
+            <p>Phone: +91 9732408005 / +91 9775939062 / +91 8617535277</p>
+            <p>Email: <a href="mailto:adarshashishuniketan.skd@gmail.com">adarshashishuniketan.skd@gmail.com</a></p>
+        </div>
+    </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
+    <!-- Admin Login Section -->
+    <section class="admin-login">
+        <div class="container">
+            <h2>Admin Login</h2>
+            <form id="admin-login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2024 Adarsha Shishu Niketan. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
