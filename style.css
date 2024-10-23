@@ -1,61 +1,116 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
-.header {
+header {
     background-color: #004d99;
-    color: #fff;
     padding: 15px;
 }
 
 .header-container {
     display: flex;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
-    width: 50px;
+    width: 70px;
     margin-right: 15px;
+}
+
+.cover-photo {
+    position: relative;
 }
 
 .cover-photo img {
     width: 100%;
     height: auto;
+    opacity: 0.7;
 }
 
-.about, .classes, .notifications, .contact, .admin-login {
-    padding: 20px;
+.cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.cover-text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.cover-text p {
+    font-size: 20px;
+    margin: 10px 0;
 }
 
 h2 {
     color: #004d99;
+    border-bottom: 2px solid #004d99;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.about, .classes, .notifications, .contact, .admin-login {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
 }
 
 .notifications li {
-    padding: 10px;
-    background-color: #f2f2f2;
+    padding: 15px;
+    background: #e9f7fe;
     margin: 10px 0;
     transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.notifications li:hover {
+    background-color: #cce8f9;
 }
 
 .notifications li.new {
-    background-color: #ffffcc;
-}
-
-.admin-login form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
+    background-color: #dff0d8;
 }
 
 input, button {
-    margin-top: 10px;
+    width: 100%;
     padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button.btn {
+    background-color: #004d99;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #003d80;
 }
