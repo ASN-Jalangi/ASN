@@ -7,32 +7,6 @@ body {
 }
 
 /* Header Section */
-.header {
-    background: #004080;
-    color: white;
-    padding: 20px 0;
-}
-
-.header-container {
-    display: flex;
-    align-items: center; /* Vertically align the logo with the text */
-}
-
-.logo {
-    width: 60px; /* Adjust the width to fit your logo size */
-    height: auto;
-    margin-right: 15px; /* Space between logo and text */
-}
-
-.school-name h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-.school-name p {
-    font-size: 1.2em;
-}
-/* Still here */
 
 .header {
     background: #004080;
