@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50; /* Header background color */
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    height: 50px; /* Logo height */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.cover-photo img {
+    width: 100%; /* Cover photo width */
+    height: auto;
+}
+
+.about-section, .notice-section {
+    padding: 20px;
+}
+
+.notice-section {
+    background-color: #f9f9f9; /* Background color for notices */
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333; /* Footer background color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+}
