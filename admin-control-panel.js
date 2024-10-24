@@ -1,22 +1,16 @@
-// Wait for the DOM to load
-document.addEventListener('DOMContentLoaded', () => {
-    // Example logic to manage notices (this can be expanded based on requirements)
-    const manageNoticesBtn = document.getElementById('manage-notices');
-    const manageGalleryBtn = document.getElementById('manage-gallery');
-    const logoutBtn = document.getElementById('logout');
+// Admin credentials (Hardcoded for now)
+const adminUserId = "ToumikASN";
+const adminPassword = "Toumik@786";
 
-    manageNoticesBtn.addEventListener('click', () => {
-        alert("Manage Notices section clicked");
-        // Add code to dynamically load or manage notices here
-    });
+// Handle Admin Login
+function handleAdminLogin(event) {
+    event.preventDefault();
+    const userId = document.getElementById('userId').value;
+    const password = document.getElementById('password').value;
 
-    manageGalleryBtn.addEventListener('click', () => {
-        alert("Manage Gallery section clicked");
-        // Add code to dynamically load or manage gallery here
-    });
-
-    // Logout button logic
-    logoutBtn.addEventListener('click', () => {
-        window.location.href = 'admin-login.html';
-    });
-});
+    if (userId === adminUserId && password === adminPassword) {
+        window.location.href = 'admin-control-panel.html'; // Redirect to the control panel
+    } else {
+        alert("Invalid login credentials. Please try again.");
+    }
+}
