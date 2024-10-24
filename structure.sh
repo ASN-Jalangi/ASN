@@ -8,7 +8,7 @@
   ├── script.js
   ├── images/
       ├── ASN.png
-      ├── ASN_Cover.jpg
+      ├── ASN-Cover.jpg
   ├── notices/
       ├── notice1.pdf
       ├── notice2.pdf
