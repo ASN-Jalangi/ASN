@@ -108,3 +108,23 @@ function logout() {
 
 // Initial rendering of notices
 renderNotices();
+
+// Function to generate PDF for a notice
+function generatePDF(noticeIndex) {
+    const notice = notices[noticeIndex];
+    const doc = new jsPDF();
+
+    doc.setFontSize(20);
+    doc.text("Adarsha Shishu Niketan", 20, 20);
+    doc.setFontSize(16);
+    doc.text("Notice Title: " + notice.title, 20, 40);
+    doc.setFontSize(14);
+    doc.text("Date: " + notice.date, 20, 50);
+    doc.setFontSize(12);
+    doc.text("Content: ", 20, 70);
+    doc.text(notice.content, 20, 80);
+    doc.text("Contact: +91 9732408005 | Email: adarshashishuniketan.skd@gmail.com", 20, 120);
+    
+    // Save the generated PDF
+    doc.save(notice.title + ".pdf");
+}
