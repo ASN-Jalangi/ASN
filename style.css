@@ -65,6 +65,40 @@
     margin: 5px 0;
 }
 
+/* Notice Section */
+.notice-section {
+    padding: 20px;
+}
+
+.notice-card {
+    background: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.notice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.notice-table th, .notice-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.notice-table .new {
+    background-color: #ffefc1;
+}
+
+.notice-table .visited {
+    background-color: #e0e0e0;
+}
+
+.new-icon {
+    color: red;
+    font-weight: bold;
+}
+
 /* Footer Styling */
 .footer {
     background: linear-gradient(to right, #85d8ce, #a2ede8);
