@@ -1,18 +1,30 @@
-// admin-login.js
+// Wait for the DOM to load
+document.addEventListener('DOMContentLoaded', () => {
+    // Get the login form and elements
+    const loginForm = document.getElementById('admin-login-form');
+    const errorMessage = document.getElementById('error-message');
 
-document.getElementById('adminLoginForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    
-    // Get the input values
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    
-    // Check if the credentials are correct
-    if (username === "ToumikASN" && password === "Toumik@786") {
-        alert("Login Successful");
-        sessionStorage.setItem("isAdminLoggedIn", "true"); // Set login status in session storage
-        window.location.href = "admin-control.html"; // Redirect to the Admin Control Panel
-    } else {
-        alert("Invalid User ID or Password");
-    }
+    // Admin credentials (these should ideally be validated on the server side)
+    const adminCredentials = {
+        username: "ToumikASN",
+        password: "Toumik@786"
+    };
+
+    // Handle form submission
+    loginForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent form from refreshing the page
+
+        // Get the entered values
+        const enteredUsername = document.getElementById('username').value;
+        const enteredPassword = document.getElementById('password').value;
+
+        // Validate credentials
+        if (enteredUsername === adminCredentials.username && enteredPassword === adminCredentials.password) {
+            // Successful login, redirect to the Admin Control Panel
+            window.location.href = 'admin-control-panel.html';
+        } else {
+            // Display error message
+            errorMessage.textContent = "Invalid username or password. Please try again.";
+        }
+    });
 });
