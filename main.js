@@ -41,3 +41,17 @@ function renderNotices() {
 
 // Render notices on page load
 window.onload = renderNotices;
+
+// Function to open modal with the clicked image
+function openModal(imageSrc) {
+    const modal = document.getElementById('gallery-modal');
+    const modalImg = document.getElementById('modal-img');
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+}
+
+// Function to close the modal
+function closeModal() {
+    const modal = document.getElementById('gallery-modal');
+    modal.style.display = "none";
+}
