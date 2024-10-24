@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Control Panel | Adarsha Shishu Niketan</title>
+    <link rel="stylesheet" href="css/admin-control.css">
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1>Admin Control Panel (ACP)</h1>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <div class="admin-section">
+            <h2>Manage Admin Credentials</h2>
+            <form id="changeCredentialsForm">
+                <div class="input-group">
+                    <label for="newUsername">New User ID</label>
+                    <input type="text" id="newUsername" placeholder="Enter new User ID">
+                </div>
+                <div class="input-group">
+                    <label for="newPassword">New Password</label>
+                    <input type="password" id="newPassword" placeholder="Enter new Password">
+                </div>
+                <button type="submit">Update Credentials</button>
+            </form>
+        </div>
+        <div class="admin-section">
+            <h2>Manage Notices</h2>
+            <button onclick="addNotice()">Add Notice</button>
+            <button onclick="editNotice()">Edit Notice</button>
+            <button onclick="deleteNotice()">Delete Notice</button>
+        </div>
+        <div class="admin-section">
+            <h2>Manage Gallery</h2>
+            <button onclick="uploadImage()">Upload Image</button>
+            <button onclick="deleteImage()">Delete Image</button>
+        </div>
+    </div>
+    <script src="js/admin-control.js"></script>
+</body>
+</html>
