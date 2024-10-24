@@ -1,96 +1,52 @@
+<!-- Homepage -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ADARSHA SHISHU NIKETAN</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Include any necessary external icons and libraries here -->
+    <title>Adarsha Shishu Niketan</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Header Section -->
     <header class="header">
-        <div class="logo-container">
-            <img src="ASN.png" alt="School Logo" class="logo">
-            <div class="school-details">
-                <h1 class="school-name">ADARSHA SHISHU NIKETAN</h1>
-                <p class="tagline">Sadikhan's Dearh, Jalangi</p>
+        <div class="container">
+            <div class="logo">
+                <img src="ASN.png" alt="School Logo">
+                <div class="school-name">
+                    <h1>Adarsha Shishu Niketan</h1>
+                    <p>Sadikhan's Dearh, Jalangi</p>
+                </div>
             </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin-login.html">Admin Login</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#notices">Notices</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#admin-login">Admin Login</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Cover Photo Section -->
-    <section id="home" class="cover-photo">
-        <img src="ASN_Cover.jpg" alt="School Cover Photo">
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="about-card">
-            <h2>About Us</h2>
-            <p>Our school was established on 2nd May, 1993. Our motto is "Education is both Enjoyable & Effective." We follow the West Bengal State Board Syllabus.</p>
-            <h3>Classes We Offer</h3>
-            <ul class="classes-list">
-                <li>Pre-Nursery</li>
-                <li>Nursery</li>
-                <li>One to Eight</li>
-            </ul>
-            <p class="government-details">
-                Authorized by the Government of West Bengal:<br>
-                Primary: 511 - SE (EE) / 10M - 93 / 2013<br>
-                Upper Primary: Govt. Memo No: 22 - SC / AIS / NOC / AIS / KTE / 2 / 2017 (Part-1)<br>
-                NOC Memo No: S / R / P - R / 2021 / 06<br>
-                Dise Code: 19071200601
-            </p>
-        </div>
-    </section>
-
-    <!-- Notices Section -->
-    <section id="notices" class="notices-section">
-        <h2>Notices</h2>
-        <table id="notice-table">
-            <!-- Notices will be dynamically inserted here -->
-        </table>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery-section">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="image1.jpg" alt="School Event 1" class="gallery-image">
-            <img src="image2.jpg" alt="School Event 2" class="gallery-image">
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <p>Address: Sadikhan's Dearh, Jalangi, Murshidabad, West Bengal, 742303</p>
-        <p>Phone: +91 9732408005 / +91 9775939062 / +91 8617535277</p>
-        <p>Email: adarshashishuniketan.skd@gmail.com</p>
-        <button onclick="window.open('https://maps.app.goo.gl/ocjPRnGwPAGPkGXK9', '_blank')">View on Google Maps</button>
-    </section>
+    <!-- Content goes here -->
 
     <!-- Footer Section -->
     <footer class="footer">
-        <div class="social-media">
-            <a href="https://facebook.com/AdarshaShishuNiketan.Jalangi" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://youtube.com/@AdarshaShishuNiketan" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://instagram.com/adarshashishuniketan.jalangi" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://facebook.com/AdarshaShishuNiketan.Jalangi" target="_blank">
+                    <img src="facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://youtube.com/@AdarshaShishuNiketan" target="_blank">
+                    <img src="youtube-icon.png" alt="YouTube">
+                </a>
+                <a href="https://instagram.com/adarshashishuniketan.jalangi" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
         </div>
-        <p>&copy; 2024 ADARSHA SHISHU NIKETAN. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
