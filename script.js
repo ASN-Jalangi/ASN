@@ -64,24 +64,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function openImageModal(imageSrc) {
-    // Create Modal Elements
-    const modalOverlay = document.createElement('div');
-    modalOverlay.classList.add('modal-overlay');
+// JavaScript for Gallery Pop-up Modal
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById("gallery-modal");
+    const modalImg = document.getElementById("modal-image");
+    const captionText = document.getElementById("caption");
+    const closeBtn = document.getElementsByClassName("close")[0];
 
-    const modalImage = document.createElement('img');
-    modalImage.src = imageSrc;
-    modalImage.classList.add('modal-image');
-
-    // Append Elements to Body
-    modalOverlay.appendChild(modalImage);
-    document.body.appendChild(modalOverlay);
-
-    // Close Modal on Click
-    modalOverlay.addEventListener('click', () => {
-        document.body.removeChild(modalOverlay);
+    document.querySelectorAll(".gallery-image").forEach(image => {
+        image.addEventListener("click", function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        });
     });
-}
+
+    closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    // Close modal when user clicks outside of the image
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
 
 
 // Function to generate a PDF for notices
