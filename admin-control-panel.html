@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin Control Panel - Adarsha Shishu Niketan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin-control-panel.css">
 </head>
 <body>
     <h2>Admin Control Panel</h2>
-    <div>
-        <!-- Placeholder for control options like "Manage Notices", "Upload Photos", etc. -->
-        <button onclick="logout()">Logout</button>
+    <div class="admin-container">
+        <nav class="admin-menu">
+            <ul>
+                <li><a href="#" id="manage-notices">Manage Notices</a></li>
+                <li><a href="#" id="manage-gallery">Manage Gallery</a></li>
+                <li><a href="#" id="manage-contacts">Manage Contacts</a></li>
+            </ul>
+        </nav>
+
+        <section class="admin-content">
+            <!-- Content will be loaded dynamically based on admin action -->
+            <p>Select an option from the left to begin managing your content.</p>
+        </section>
     </div>
 
-    <script>
-        function logout() {
-            window.location.href = 'admin-login.html';
-        }
-    </script>
+    <button id="logout">Logout</button>
+
+    <script src="admin-control-panel.js"></script>
 </body>
 </html>
