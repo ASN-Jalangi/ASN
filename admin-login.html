@@ -1,24 +1,22 @@
+<!-- Admin Login Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Login</title>
+    <title>Admin Login - Adarsha Shishu Niketan</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="admin-login-container">
         <h2>Admin Login</h2>
-        <form id="admin-login-form" onsubmit="return adminLogin()">
-            <label for="username">Username:</label>
-            <input type="text" id="username" required>
-            
+        <form id="admin-login-form" onsubmit="handleAdminLogin(event)">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" required>
             <label for="password">Password:</label>
             <input type="password" id="password" required>
-            
             <button type="submit">Login</button>
         </form>
-        <p id="login-error" class="error-message"></p>
     </div>
-    <script src="admin-login.js"></script>
+    <script src="admin-control-panel.js"></script>
 </body>
 </html>
