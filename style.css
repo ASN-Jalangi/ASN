@@ -24,6 +24,26 @@
     font-style: italic;
 }
 
+/* Cover Photo Section */
+.cover-photo {
+    position: relative;
+    width: 100%;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: navy;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+}
+
 /* Footer Styling */
 .footer {
     background: linear-gradient(to right, #85d8ce, #a2ede8);
