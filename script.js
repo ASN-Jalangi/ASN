@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // JavaScript for Gallery Section
 document.addEventListener('DOMContentLoaded', function() {
-    const galleryImages = ["photo1.jpg", "photo2.jpg", "photo3.jpg"]; // Placeholder image paths
+    const galleryImages = ["ASN_Cover.jpg", "photo2.jpg", "photo3.jpg"]; // Placeholder image paths
 
     const galleryGrid = document.querySelector('.gallery-grid');
     galleryImages.forEach((imageSrc, index) => {
