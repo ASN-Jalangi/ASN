@@ -1,62 +1,119 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    background-color: #f2f2f2;
 }
 
-.navbar {
+/* Header Styles */
+.fixed-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
     padding: 10px 20px;
-    background-color: #f0f0f0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
-.logo {
-    width: 60px;
+.fixed-header .logo img {
+    height: 60px;
+    width: auto;
+}
+
+.fixed-header .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-header .navbar ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.fixed-header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Cover Photo */
+.cover-photo {
+    position: relative;
+    text-align: center;
+}
+
+.cover-photo img {
+    width: 100%;
     height: auto;
 }
 
-.nav-links a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #000;
-}
-
-#cover {
-    position: relative;
-}
-
-.cover-photo {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.cover-text {
+.cover-photo .cover-text {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: navy;
-    transform: translateY(-50%);
 }
 
-#main-content {
-    display: flex;
-    justify-content: space-between;
+/* About Section */
+.about-card {
+    background-color: white;
+    border-radius: 8px;
+    margin: 80px auto 20px auto;
+    width: 90%;
+    max-width: 1200px;
     padding: 20px;
 }
 
-#about, #notices {
-    width: 45%;
+.classes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.notice-list {
-    list-style: none;
+.classes-list li {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-footer {
-    background: linear-gradient(to right, #a8d0e6, #f8e9a1);
-    padding: 10px 20px;
+/* Notices Table */
+.notices-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.notices-table th, .notices-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.notices-table th {
+    background-color: #333;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(to right, #33ccff, #3366ff);
+    padding: 20px;
     text-align: center;
+    color: white;
+}
+
+.footer .social-icons img {
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer .social-icons img:hover {
+    transform: scale(1.2);
 }
