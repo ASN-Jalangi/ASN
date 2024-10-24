@@ -3,33 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin Login - Adarsha Shishu Niketan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="admin-login-container">
+    <div class="login-container">
         <h2>Admin Login</h2>
         <form id="admin-login-form">
-            <label for="user-id">User ID:</label>
-            <input type="text" id="user-id" name="user-id">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" required>
             <button type="submit">Login</button>
         </form>
+        <p id="error-message" class="error"></p>
     </div>
 
-    <script>
-        const form = document.getElementById('admin-login-form');
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const userId = document.getElementById('user-id').value;
-            const password = document.getElementById('password').value;
-
-            if (userId === 'ToumikASN' && password === 'Toumik@786') {
-                window.location.href = 'admin-control-panel.html';
-            } else {
-                alert('Invalid login credentials!');
-            }
-        });
-    </script>
+    <script src="admin-login.js"></script>
 </body>
 </html>
