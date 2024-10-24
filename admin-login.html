@@ -2,26 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Login | Adarsha Shishu Niketan</title>
-    <link rel="stylesheet" href="css/admin-login.css">
+    <title>Admin Login - Adarsha Shishu Niketan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-box">
-            <h2>Admin Login</h2>
-            <form id="adminLoginForm">
-                <div class="input-group">
-                    <label for="username">User ID</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your User ID" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
-                </div>
-                <button type="submit">Login</button>
-            </form>
-        </div>
+    <div class="admin-login-container">
+        <h2>Admin Login</h2>
+        <form id="admin-login-form">
+            <label for="user-id">User ID:</label>
+            <input type="text" id="user-id" name="user-id">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">Login</button>
+        </form>
     </div>
-    <script src="js/admin-login.js"></script>
+
+    <script>
+        const form = document.getElementById('admin-login-form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const userId = document.getElementById('user-id').value;
+            const password = document.getElementById('password').value;
+
+            if (userId === 'ToumikASN' && password === 'Toumik@786') {
+                window.location.href = 'admin-control-panel.html';
+            } else {
+                alert('Invalid login credentials!');
+            }
+        });
+    </script>
 </body>
 </html>
