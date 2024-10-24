@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Login - Adarsha Shishu Niketan</title>
+    <title>Admin Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
+    <div class="admin-login-container">
         <h2>Admin Login</h2>
-        <form id="admin-login-form">
+        <form id="admin-login-form" onsubmit="return adminLogin()">
             <label for="username">Username:</label>
             <input type="text" id="username" required>
+            
             <label for="password">Password:</label>
             <input type="password" id="password" required>
+            
             <button type="submit">Login</button>
         </form>
-        <p id="error-message" class="error"></p>
+        <p id="login-error" class="error-message"></p>
     </div>
-
     <script src="admin-login.js"></script>
 </body>
 </html>
