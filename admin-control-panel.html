@@ -2,28 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Control Panel - Adarsha Shishu Niketan</title>
+    <title>Admin Control Panel</title>
     <link rel="stylesheet" href="admin-control-panel.css">
 </head>
 <body>
-    <h2>Admin Control Panel</h2>
-    <div class="admin-container">
-        <nav class="admin-menu">
+    <div class="admin-panel-container">
+        <h2>Admin Control Panel</h2>
+        <nav class="admin-nav">
             <ul>
-                <li><a href="#" id="manage-notices">Manage Notices</a></li>
-                <li><a href="#" id="manage-gallery">Manage Gallery</a></li>
-                <li><a href="#" id="manage-contacts">Manage Contacts</a></li>
+                <li><a href="#manage-notices">Manage Notices</a></li>
+                <li><a href="#manage-gallery">Manage Gallery</a></li>
+                <li><a href="#edit-contacts">Edit Contacts</a></li>
+                <li><a href="index.html">Logout</a></li>
             </ul>
         </nav>
 
-        <section class="admin-content">
-            <!-- Content will be loaded dynamically based on admin action -->
-            <p>Select an option from the left to begin managing your content.</p>
+        <!-- Placeholder Sections -->
+        <section id="manage-notices">
+            <h3>Manage Notices</h3>
+            <p>Add, edit, or delete notices here.</p>
+            <!-- Implement additional notice management functionalities -->
+        </section>
+
+        <section id="manage-gallery">
+            <h3>Manage Gallery</h3>
+            <p>Upload or delete gallery images here.</p>
+            <!-- Implement additional gallery management functionalities -->
+        </section>
+
+        <section id="edit-contacts">
+            <h3>Edit Contacts</h3>
+            <p>Edit contact information here.</p>
+            <!-- Implement contact management functionalities -->
         </section>
     </div>
-
-    <button id="logout">Logout</button>
-
-    <script src="admin-control-panel.js"></script>
 </body>
 </html>
