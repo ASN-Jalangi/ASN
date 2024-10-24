@@ -245,6 +245,29 @@
     transition: background-color 0.3s;
 }
 
+/* Adding a hover effect for all buttons */
+button:hover, .btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+/* Adding a fade-in effect for sections */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Smooth scrolling effect for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
 .map-button:hover {
     background-color: #0056b3;
 }
