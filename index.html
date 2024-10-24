@@ -86,12 +86,23 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
+    <div class="gallery">
+        <h3>Photo Gallery</h3>
         <div class="gallery-grid">
-            <!-- Image thumbnails here -->
+            <img src="gallery/photo1.jpg" alt="Photo 1" class="gallery-image">
+            <img src="gallery/photo2.jpg" alt="Photo 2" class="gallery-image">
+            <img src="gallery/photo3.jpg" alt="Photo 3" class="gallery-image">
+            <!-- Add more images as needed -->
         </div>
-    </section>
+    </div>
+
+    <!-- Modal for full-size image viewing -->
+    <div id="gallery-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
 
     <!-- Footer Section -->
     <footer class="footer">
