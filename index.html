@@ -2,66 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Adarsha Shishu Niketan</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Adarsha Shishu Niketan - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="notices.css">
+    <link rel="stylesheet" href="gallery.css">
     <link rel="icon" href="ASN.png">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <img src="ASN.png" class="logo" alt="School Logo">
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="admin-login.html" class="admin-link">Admin Login</a>
-            </div>
-        </div>
-    </header>
-
-    <section id="cover">
-        <img src="ASN-Cover.jpg" alt="School Cover Photo" class="cover-photo">
-        <div class="cover-text">
+    <!-- Header Section -->
+    <header class="fixed-header">
+        <div class="logo">
+            <img src="ASN.png" alt="School Logo">
             <h1>Adarsha Shishu Niketan</h1>
             <p>Sadikhan's Dearh, Jalangi</p>
         </div>
-    </section>
-
-    <section id="main-content">
-        <div id="about">
-            <h2>About Us</h2>
-            <p>Adarsha Shishu Niketan was established on 2nd May 1993 with the motto “Education is both Enjoyable & Effective”. We follow the West Bengal State Board Syllabus and are authorized by the West Bengal Government. The school offers classes from Pre-Nursery to Class Eight and emphasizes holistic education.</p>
-            <h3>Government Authorization:</h3>
+        <nav class="navbar">
             <ul>
-                <li>Primary: 511 - SE (EE) / 10M - 93 / 2013</li>
-                <li>Upper Primary: Govt. Memo No: 22 - SC / AIS / NOC / AIS / KTE / 2 / 2017 (Part-1)</li>
-                <li>NOC Memo No: S / R / P - R / 2021 / 06</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="admin-login.html">Admin Login</a></li>
             </ul>
-        </div>
+        </nav>
+    </header>
 
-        <div id="notices">
-            <h2>Notices</h2>
-            <ul class="notice-list">
-                <!-- Placeholder for dynamic notices -->
+    <!-- Cover Photo Section -->
+    <section class="cover-photo" id="home">
+        <img src="cover-photo.jpg" alt="School Cover Photo">
+        <div class="cover-text">
+            <h2>Welcome to Adarsha Shishu Niketan</h2>
+            <p>"Education is both Enjoyable & Effective"</p>
+        </div>
+    </section>
+
+    <!-- About Section (Card Format) -->
+    <section id="about" class="about-card">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Established on 2nd May, 1993, Adarsha Shishu Niketan follows the West Bengal State Board Syllabus.</p>
+            <p>Government Authorized (Primary: 511 - SE (EE) / 10M - 93 / 2013)</p>
+            <p>Upper Primary: Govt. Memo No: 22 - SC / AIS / NOC / AIS / KTE / 2 / 2017 (Part-1)</p>
+            <p>NOC Memo No: S / R / P - R / 2021 / 06</p>
+            <p>DISE Code: 19071200601</p>
+            <h3>Classes We Offer:</h3>
+            <ul class="classes-list">
+                <li>Pre-Nursery</li>
+                <li>Nursery</li>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+                <li>Five</li>
+                <li>Seven</li>
+                <li>Eight</li>
             </ul>
         </div>
     </section>
 
+    <!-- Notices Section -->
+    <section id="notices">
+        <h2>Notices</h2>
+        <table class="notices-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="notices-body">
+                <!-- Notices will be dynamically loaded here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Address: Sadikhan's Dearh, Jalangi, Murshidabad, West Bengal, 742303</p>
-        <p>Phone: +91 9732408005, +91 9775939062, +91 8617535277</p>
+        <p>Phone: +91 9732408005 / +91 9775939062 / +91 8617535277</p>
         <p>Email: adarshashishuniketan.skd@gmail.com</p>
-        <a href="https://maps.app.goo.gl/ocjPRnGwPAGPkGXK9" target="_blank">View on Google Maps</a>
+        <button onclick="window.location.href='https://maps.app.goo.gl/ocjPRnGwPAGPkGXK9'">View on Google Maps</button>
     </section>
 
-    <footer>
-        <p>Follow us on:</p>
-        <div class="social-icons">
-            <a href="https://facebook.com/AdarshaShishuNiketan.Jalangi" target="_blank">Facebook</a>
-            <a href="https://youtube.com/@AdarshaShishuNiketan" target="_blank">YouTube</a>
-            <a href="https://instagram.com/adarshashishuniketan.jalangi" target="_blank">Instagram</a>
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Image thumbnails here -->
         </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://facebook.com/AdarshaShishuNiketan.Jalangi" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://youtube.com/@AdarshaShishuNiketan" target="_blank">
+                <img src="youtube-icon.png" alt="YouTube">
+            </a>
+            <a href="https://instagram.com/adarshashishuniketan.jalangi" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+        <p>&copy; 2024 Adarsha Shishu Niketan. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
