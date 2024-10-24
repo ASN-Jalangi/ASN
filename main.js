@@ -42,16 +42,19 @@ function renderNotices() {
 // Render notices on page load
 window.onload = renderNotices;
 
-// Function to open modal with the clicked image
-function openModal(imageSrc) {
-    const modal = document.getElementById('gallery-modal');
-    const modalImg = document.getElementById('modal-img');
-    modal.style.display = "block";
-    modalImg.src = imageSrc;
+// Open Modal to show full-size image
+function openModal(imageElement) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('fullImage');
+    const captionText = document.getElementById('caption');
+
+    modal.style.display = 'block';
+    modalImage.src = imageElement.src;
+    captionText.innerHTML = imageElement.alt;
 }
 
-// Function to close the modal
+// Close Modal when user clicks outside the image or on close button
 function closeModal() {
-    const modal = document.getElementById('gallery-modal');
-    modal.style.display = "none";
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
 }
