@@ -5,37 +5,40 @@ const notices = [
 ];
 
 function renderNotices() {
-    const noticeList = document.getElementById('notice-list');
-    noticeList.innerHTML = ''; // Clear previous entries
+    const noticeTable = document.getElementById('notice-table');
+    noticeTable.innerHTML = ''; // Clear existing notices
 
     notices.forEach((notice, index) => {
-        const tr = document.createElement('tr');
-        tr.classList.add(notice.visited ? 'visited' : 'new');
-        
-        const titleTd = document.createElement('td');
-        titleTd.textContent = notice.title;
-        tr.appendChild(titleTd);
+        const row = document.createElement('tr');
+        row.classList.add(notice.visited ? 'visited' : 'new');
 
-        const dateTd = document.createElement('td');
-        dateTd.textContent = notice.date;
-        tr.appendChild(dateTd);
+        const titleCell = document.createElement('td');
+        titleCell.textContent = notice.title;
+        row.appendChild(titleCell);
 
-        const statusTd = document.createElement('td');
-        if (!notice.visited) {
-            const newIcon = document.createElement('span');
-            newIcon.classList.add('new-icon');
-            newIcon.textContent = 'NEW';
-            statusTd.appendChild(newIcon);
-        }
-        tr.appendChild(statusTd);
+        const dateCell = document.createElement('td');
+        dateCell.textContent = notice.date;
+        row.appendChild(dateCell);
 
-        // Add click event to mark notice as visited
-        tr.addEventListener('click', () => {
-            notice.visited = true;
-            renderNotices(); // Re-render the notices
-        });
+        const actionCell = document.createElement('td');
 
-        noticeList.appendChild(tr);
+        // Create a Delete button
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = "Delete";
+        deleteButton.onclick = () => {
+            notices.splice(index, 1);
+            renderNotices();
+        };
+        actionCell.appendChild(deleteButton);
+
+        // Create a Download PDF button
+        const pdfButton = document.createElement('button');
+        pdfButton.textContent = "Download PDF";
+        pdfButton.onclick = () => generatePDF(index);
+        actionCell.appendChild(pdfButton);
+
+        row.appendChild(actionCell);
+        noticeTable.appendChild(row);
     });
 }
 
