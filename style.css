@@ -44,6 +44,27 @@
     padding: 10px;
 }
 
+/* About Section */
+.about-section .about-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2, .about-section h3 {
+    color: navy;
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section ul li {
+    margin: 5px 0;
+}
+
 /* Footer Styling */
 .footer {
     background: linear-gradient(to right, #85d8ce, #a2ede8);
